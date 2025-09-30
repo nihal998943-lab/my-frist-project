@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #333; color: white; padding: 20px; text-align: center; }
+    nav { background: #444; padding: 10px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 20px; }
+    footer { background: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+    .card { background: white; padding: 15px; margin: 15px 0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    button { background: teal; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: darkcyan; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌐 Sample Website</h1>
+    <p>This is a simple HTML website template</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <div class="card">
+      <p>This is a sample homepage section. You can add text, images, or buttons here.</p>
+      <button onclick="alert('Hello! Thanks for visiting')">Click Me</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="card">
+      <p>This is a simple sample website created with HTML, CSS, and JavaScript. You can use it as a starting point for your projects.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="card">
+      <ul>
+        <li>Web Development</li>
+        <li>App Development</li>
+        <li>Database Management</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="card">
+      <form onsubmit="event.preventDefault(); alert('Message Sent!');">
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="email" placeholder="Your Email" required><br><br>
+        <textarea placeholder="Your Message" required></textarea><br><br>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sample Website | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
